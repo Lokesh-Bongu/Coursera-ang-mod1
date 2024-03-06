@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <style>
         .message { font-size: 1.3em; font-weight: bold; }
+        .red-text { color: red; }
+        .green-text { color: green; }
+        .red-border { border-color: red; }
+        .green-border { border-color: green; }
     </style>
 </head>
 <body>
@@ -25,7 +29,7 @@
             <button class="btn btn-default" ng-click="checkLunch()">Check If Too Much</button>
         </div>
 
-        <div class="form-group message" ng-class="{ 'red-text': messageColor === 'red', 'green-text': messageColor === 'green' }">
+        <div class="form-group message" ng-class="{ 'red-text': messageColor === 'red' && message === 'Too much!', 'green-text': messageColor === 'green' }">
             {{ message }}
         </div>
     </div>
