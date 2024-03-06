@@ -12,7 +12,7 @@
         // Get the items from the textbox and split them by commas
         var items = $scope.lunchItems ? $scope.lunchItems.split(',') : [];
   
-        // Remove empty items
+        // Remove empty items and trim spaces
         items = items.filter(function (item) {
           return item.trim() !== '';
         });
