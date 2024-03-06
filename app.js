@@ -20,11 +20,18 @@
         // Check the number of items and display appropriate message
         if (items.length === 0) {
           $scope.message = 'Please enter data first';
+          $scope.messageColor = 'red';
+          $scope.textBoxBorderColor = 'red';
         } else if (items.length <= 3) {
           $scope.message = 'Enjoy!';
+          $scope.messageColor = 'green';
+          $scope.textBoxBorderColor = 'green';
         } else {
           $scope.message = 'Too much!';
+          $scope.messageColor = 'green';
+          $scope.textBoxBorderColor = 'green';
         }
       };
     }
   })();
+  
