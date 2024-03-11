@@ -28,8 +28,8 @@
           $scope.textBoxBorderColor = 'green';
         } else {
           $scope.message = 'Too much!';
-          $scope.messageColor = 'green'; // Change to red color for "Too much!"
-          $scope.textBoxBorderColor = 'green'; // Change to red border color for "Too much!"
+          $scope.messageColor = 'green'; // Change to green color for "Too much!"
+          $scope.textBoxBorderColor = 'green'; // Change to green border color for "Too much!"
         }
       };
     }
